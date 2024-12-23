@@ -7,12 +7,12 @@ const app = express();
 app.use(cors())
 app.use(express.json());
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
     res.send("hello this is a get request")
 })
 
 
-app.post('/',async(req,res)=>{
+app.post('/api',async(req,res)=>{
     const {userInput} = req.body
 
    try{
